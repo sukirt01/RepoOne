@@ -22,7 +22,7 @@ class Process:
 
     def isCurrentNeedSatisfied(self, vector):
         for i in range(len(vector)):
-            if (self.currentNeed[i] > vector[i]):
+            if (self.currentNeed[i] >= vector[i]):
                 return False
         return True
 
