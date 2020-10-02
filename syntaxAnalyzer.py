@@ -23,12 +23,7 @@ print("Output: ", end="")
 
 if inputData.__len__() == 1 and not inputData.isdigit():
     print("Char")
-elif (
-    inputData == "True"
-    or inputData == "true"
-    or inputData == "false"
-    or inputData == "False"
-):
+elif ( inputData == "True, true, False, false"):
     print("Boolean")
 elif inputData.isdecimal() and inputData.__contains__("."):
     print("Float")
